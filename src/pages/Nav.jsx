@@ -13,6 +13,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 export default function Nav() {
   return (
     <>
+    <div className="outContainer">
       <div className="navContainer">
         <img src={logo} alt="main logo" className="logo" />
         <div className="listItems">
@@ -25,7 +26,7 @@ export default function Nav() {
         </div>
       </div>
       <div className="heroContainer">
-        <img src={heroimg} alt="hero image" className="heroimage" />
+        <img src={heroimg} alt="hero description" className="heroimage" />
         <div className="heroContent">
           <h6>Food app</h6>
           <h1 className="heroContentHeader">
@@ -53,7 +54,8 @@ export default function Nav() {
         <div className="rightSession">
           <h4 className="linkHeader">create an account</h4>
           <h2 className="theHeader">
-            Create/Login to existing<br/> account to get started
+            Create/Login to existing
+            <br /> account to get started
           </h2>
           <p className="descpara">
             An Account is created with your email and desired password
@@ -64,7 +66,7 @@ export default function Nav() {
         <div className="leftExploreSession">
           <h4 className="exploreLinkHeader">explore varieties</h4>
           <h2 className="exploreHeader">
-            shop for your favorite <br/> meals as ee d hot
+            shop for your favorite <br /> meals as ee d hot
           </h2>
           <p className="descexplore">
             shop for your favorie meal or drinks and enjoy while doing that
@@ -81,12 +83,13 @@ export default function Nav() {
         <div className="rightCheckoutSession">
           <h4 className="checkoutLink">checkout</h4>
           <h2 className="theCheckoutHeader">
-            when you done checkout <br/>and get it delivered
+            when you done checkout <br />
+            and get it delivered
           </h2>
           <p className="descparaCheckout">
-            when you done check out and get it delivered with ease
-            when you done check out and get it delivered with ease
-            when you done check out and get it delivered with ease
+            when you done check out and get it delivered with ease when you done
+            check out and get it delivered with ease when you done check out and
+            get it delivered with ease
           </p>
         </div>
       </div>
@@ -94,7 +97,7 @@ export default function Nav() {
         {/* <img src={footerimg} alt="" className='footerImage' /> */}
       </div>
       <div className="heroContainer">
-        <img src={footerimg} alt="hero image" className="heroimage" />
+        <img src={footerimg} alt="hero descriptoin" className="heroimage" />
         <div className="footerheroContent">
           <h6>Download the app now.</h6>
           <div className="downloadAppDesc">
@@ -105,21 +108,21 @@ export default function Nav() {
             <button className="rightButtonFooter">app Store</button>
           </div>
         </div>
-        
       </div>
       <div className="footerSession">
-          <div className="logoFooterSession">
-            <img src={logo} alt="main logo" />
-          </div>
-          <div className="footerIcons">
-            <FacebookIcon className="footerIcon" />
-            <InstagramIcon className="footerIcon" />
-            <TwitterIcon className="footerIcon" />
-          </div>
-          <div className="copyrightSession">
-            <p>copyright: 2010 dricks designs</p>
-          </div>
+        <div className="logoFooterSession">
+          <img src={logo} alt="main logo" />
         </div>
+        <div className="footerIcons">
+          <FacebookIcon className="footerIcon" />
+          <InstagramIcon className="footerIcon" />
+          <TwitterIcon className="footerIcon" />
+        </div>
+        <div className="copyrightSession">
+          <p>copyright: 2010 dricks designs</p>
+        </div>
+      </div>
+      </div>
     </>
   );
 }

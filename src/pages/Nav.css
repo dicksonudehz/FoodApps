@@ -216,6 +216,7 @@
   font-size: 20px;
   padding-top: 10px;
 }
+        /* <img src={footerimg} alt="" className='footerImage' /> */
 .footerheroContent {
   position: absolute;
   display: flex;
@@ -283,4 +284,95 @@
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
+}
+
+/* responsiveness styling  */
+
+/* @media screen and (min-width: 768px) and (max-width: 1023px){ */
+  @media screen and  (max-width: 960px){
+    
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  .outContainer{ 
+  margin: auto;
+  overflow: hidden;
+  background-color: blue;
+   }
+  .navContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 100%;
+    overflow: hidden;
+  }
+  .navContainer img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .listItems {
+    justify-content: center;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .heroContainer {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -999px;
+  }
+  .heroimage {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -999px;
+  }
+ 
+  .heroContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroContent h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    bottom: 20px;
+  }
+  .heroContent h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .phoneHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: -150px;
+  }
+  .phoneHeaderimg {
+    object-fit: cover;
+    z-index: 99;
+    width: 70%;
+  }
 }
