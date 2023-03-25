@@ -9,6 +9,7 @@ import footerimg from "../images/img.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Nav() {
   return (
@@ -16,6 +17,7 @@ export default function Nav() {
     <div className="outContainer">
       <div className="navContainer">
         <img src={logo} alt="main logo" className="logo" />
+        <div className="horinBars"><MenuIcon className="barsMenu"/></div>
         <div className="listItems">
           <ul>
             <li className="navLinks">home</li>
