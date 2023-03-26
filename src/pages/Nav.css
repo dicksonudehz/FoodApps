@@ -315,8 +315,7 @@
 /* @media screen and (min-width: 768px) and (max-width: 1023px){ */
 @media screen and (max-width: 960px) {
   /* .outContainer {
-    margin: auto;
-    overflow: hidden;
+   
   } */
   .navContainer {
     display: flex;
@@ -324,11 +323,15 @@
     flex-direction: column;
     width: 100%;
     overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .navContainer img {
     padding-top: 10px;
     width: 40%;
     object-fit: cover;
+    display: flex;
+    padding-left: 30px;
   }
 
   .listItems {
@@ -346,6 +349,8 @@
     justify-content: center;
     margin-top: 20px;
     background-color: #fafafa;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .heroimage {
     height: 500px;
@@ -363,6 +368,8 @@
     align-items: center;
     color: black;
     margin-top: -130px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .heroContent h6 {
     color: black;
@@ -375,31 +382,39 @@
     font-weight: 600;
     padding-bottom: 20px;
     padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .buttonContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
   }
   .leftButton {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 10px 50px;
+    padding: 10px 30px;
     margin-bottom: 10px;
     border-radius: 30px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
+    align-items: center;
   }
   .rightButton {
-    margin: 0;
-    padding: 10px 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    margin-bottom: 10px;
     border-radius: 30px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer;
+    align-items: center;
   }
   .phoneHeaderContainer {
     display: flex;
@@ -445,6 +460,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
     /* margin: auto; */
   }
   .leftSesion img {
@@ -471,12 +487,17 @@
   .rightSession h2 {
     font-size: 20px;
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .rightSession p {
     text-align: center;
     justify-content: center;
     align-self: center;
     font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
     /* display: none; */
   }
   /* br{
@@ -534,6 +555,8 @@
     justify-content: center;
     align-self: center;
     font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
     /* display: none; */
   }
 
