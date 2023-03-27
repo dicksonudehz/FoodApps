@@ -17,10 +17,12 @@ export default function Nav() {
       <div className="outContainer">
         <div className="navContainer">
           <img src={logo} alt="main logo" className="logo" />
-          <div className="horinBars">
-            <MenuIcon className="barsMenu" />
-          </div>
+
           <div className="listItems">
+            <div className="horinBars">
+              <MenuIcon className="barsMenu" />
+            </div>
+              <input type="checkbox" className="nav-toogle" />
             <ul>
               <li className="navLinks">home</li>
               <li className="navLinks">products</li>
