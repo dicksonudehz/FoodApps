@@ -13,10 +13,10 @@
   justify-content: space-between;
   height: 100%;
 }
-.horinBars{
+.horinBars {
   display: none;
 }
-.nav-toogle{
+.nav-toogle {
   display: none;
 }
 
@@ -321,7 +321,7 @@
   /* .outContainer {
    
   } */
-  
+
   .navContainer {
     display: flex;
     align-items: flex-start;
@@ -330,33 +330,33 @@
     justify-content: space-between;
     padding-top: 20px;
   }
-  
+
   .navContainer img {
     width: 40%;
     object-fit: cover;
   }
-.horinBars{
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
-}
+  .horinBars {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+  }
 
-.nav-toogle{
-  justify-content: flex-end;
-  float: right;
-  margin-left: 410px;
-  margin-top: -20px;
-  cursor: pointer;
-  display: block;
-  opacity: 0;
-}
-.nav-toogle:hover ~ ul{
-  display: block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
+  .nav-toogle {
+    justify-content: flex-end;
+    float: right;
+    margin-left: 410px;
+    margin-top: -20px;
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+  }
+  .nav-toogle:hover ~ .navItemsUl {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .listItems {
     justify-content: center;
     padding-right: 50px;
@@ -371,15 +371,14 @@
     z-index: 999;
   }
 
-  .listItems ul{
+  .listItems ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     display: none;
-
   }
-  .listItems ul li{
+  .listItems ul li {
     padding-top: 15px;
     font-size: 14px;
     font-weight: 700;

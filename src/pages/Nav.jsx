@@ -23,7 +23,8 @@ export default function Nav() {
               <MenuIcon className="barsMenu" />
             </div>
               <input type="checkbox" className="nav-toogle" />
-            <ul>
+
+            <ul className="navItemsUl">
               <li className="navLinks">home</li>
               <li className="navLinks">products</li>
               <li className="navLinks">faqs</li>
