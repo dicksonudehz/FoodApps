@@ -339,8 +339,8 @@
   justify-content: flex-end;
   align-items: center;
   display: flex;
-
 }
+
 .nav-toogle{
   justify-content: flex-end;
   float: right;
@@ -350,7 +350,7 @@
   display: block;
   opacity: 0;
 }
-.nav-toogle:checked ~ ul{
+.nav-toogle:hover ~ ul{
   display: block;
   display: flex;
   flex-direction: column;
