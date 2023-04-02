@@ -19,17 +19,18 @@ export default function Nav() {
           <img src={logo} alt="main logo" className="logo" />
 
           <div className="listItems">
-            <div className="horinBars">
-              <MenuIcon className="barsMenu" />
+            
+          <MenuIcon className="barsMenu" />
+            <input type="checkbox" className="checkboxed"/>
+            <div className="navItemsUi" >
+            
+              <ul>
+                <li className="navLinks">home</li>
+                <li className="navLinks">products</li>
+                <li className="navLinks">faqs</li>
+                <li className="navLinks">contacts</li>
+              </ul>
             </div>
-              <input type="checkbox" className="nav-toogle" />
-
-            <ul className="navItemsUl">
-              <li className="navLinks">home</li>
-              <li className="navLinks">products</li>
-              <li className="navLinks">faqs</li>
-              <li className="navLinks">contacts</li>
-            </ul>
           </div>
         </div>
         <div className="heroContainer">

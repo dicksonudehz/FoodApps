@@ -321,69 +321,110 @@
   /* .outContainer {
    
   } */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+  }
 
   .navContainer {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
     padding-top: 20px;
+    /* position: absolute; */
+    /* overflow-x: hidden; */
+
   }
 
   .navContainer img {
-    width: 40%;
+    width: 30%;
     object-fit: cover;
-  }
-  .horinBars {
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-  }
-
-  .nav-toogle {
-    justify-content: flex-end;
-    float: right;
-    margin-left: 410px;
-    margin-top: -20px;
-    cursor: pointer;
-    display: block;
-    opacity: 0;
-  }
-  .nav-toogle:hover ~ .navItemsUl {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  .listItems {
-    justify-content: center;
-    padding-right: 50px;
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 40px;
     position: absolute;
-    z-index: 999;
+    z-index: 99999999999999;
+  }
+.listItems{
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-start;
+  display: flex;
+  float: right;
+  flex-direction: column;
+}
+.navItemsUi{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 350px;
+  padding-right: 10px;
+  background-color: rgb(241, 241, 241);
+position: absolute;
+z-index: 999;
+
+  padding-bottom: 40px;
+}
+.checkboxed{
+  position: relative;
+  margin-right: 50px;
+  cursor: pointer;
+  display: block;
+  opacity: 0;
+  transition: all 1s;
+  top: 23px;
+  left: 45px;
+  z-index: 9999;
+
+}
+.barsMenu{
+  position: absolute;
+  margin-top: -2px;
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+  z-index: 9999;
+
+}
+.listItems .checkboxed{
+  margin-top: -20px;
+  float: right;
+  align-items: right;
+}
+.navItemsUi {
+  display: none;
+}
+.navItemsUi ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: right;
+  margin-top: 50px;
+}
+.navItemsUi ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: right;
+  padding-top: 20px;
+}
+
+  .checkboxed:checked ~ .navItemsUi {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    float: right;
+    transition: all 1s ease;
+    display: block;
   }
 
-  .listItems ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    display: none;
-  }
-  .listItems ul li {
-    padding-top: 15px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+
+  
   .heroContainer {
     position: relative;
     display: flex;
