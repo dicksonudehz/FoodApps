@@ -13,10 +13,10 @@
   justify-content: space-between;
   height: 100%;
 }
-.horinBars {
+.checkboxed {
   display: none;
 }
-.nav-toogle {
+.listItems .barsMenu {
   display: none;
 }
 
@@ -321,12 +321,10 @@
   /* .outContainer {
    
   } */
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-
   }
 
   .navContainer {
@@ -337,7 +335,6 @@
     padding-top: 20px;
     /* position: absolute; */
     /* overflow-x: hidden; */
-
   }
 
   .navContainer img {
@@ -346,72 +343,70 @@
     position: absolute;
     z-index: 99999999999999;
   }
-.listItems{
-  width: 100%;
-  align-items: flex-end;
-  justify-content: flex-start;
-  display: flex;
-  float: right;
-  flex-direction: column;
-}
-.navItemsUi{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 350px;
-  padding-right: 10px;
-  background-color: rgb(241, 241, 241);
-position: absolute;
-z-index: 999;
+  .listItems {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+    float: right;
+    flex-direction: column;
+  }
+  .navItemsUi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 350px;
+    padding-right: 10px;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    z-index: 999;
 
-  padding-bottom: 40px;
-}
-.checkboxed{
-  position: relative;
-  margin-right: 50px;
-  cursor: pointer;
-  display: block;
-  opacity: 0;
-  transition: all 1s;
-  top: 23px;
-  left: 45px;
-  z-index: 9999;
-
-}
-.barsMenu{
-  position: absolute;
-  margin-top: -2px;
-  display: block;
-  opacity: 1;
-  transition: all 1s;
-  z-index: 9999;
-
-}
-.listItems .checkboxed{
-  margin-top: -20px;
-  float: right;
-  align-items: right;
-}
-.navItemsUi {
-  display: none;
-}
-.navItemsUi ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: right;
-  margin-top: 50px;
-}
-.navItemsUi ul li{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: right;
-  padding-top: 20px;
-}
+    padding-bottom: 40px;
+  }
+  .checkboxed {
+    position: relative;
+    margin-right: 50px;
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+    transition: all 1s;
+    top: 23px;
+    left: 45px;
+    z-index: 9999;
+  }
+  .listItems .barsMenu {
+    position: absolute;
+    margin-top: -2px;
+    display: block;
+    opacity: 1;
+    transition: all 1s;
+    z-index: 9999;
+  }
+  .listItems .checkboxed {
+    margin-top: -20px;
+    float: right;
+    align-items: right;
+  }
+  .navItemsUi {
+    display: none;
+  }
+  .navItemsUi ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    float: right;
+    margin-top: 50px;
+  }
+  .navItemsUi ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    float: right;
+    padding-top: 20px;
+  }
 
   .checkboxed:checked ~ .navItemsUi {
     display: block;
@@ -423,8 +418,6 @@ z-index: 999;
     display: block;
   }
 
-
-  
   .heroContainer {
     position: relative;
     display: flex;
